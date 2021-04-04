@@ -1,6 +1,7 @@
 16 Pads
 
 Background:
+<br>
 16 Pads is based on the Akai MPC controller. The controller is made up of a 4x4 grid of pads which can be played when pressed.
 
 Functionality:
@@ -12,10 +13,12 @@ Functionality:
 
 Wireframe:
 <br>
-Image placeholder
+<img src="https://github.com/thedaebu/16pads/blob/main/wireframe.png"></img>
 
 Technology:
+<br>
 Node.js, Web Audio API
 
 Implementation Timeline:
+<br>
 TBA
