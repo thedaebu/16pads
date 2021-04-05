@@ -20,5 +20,9 @@ Technology:
 Node.js, Web Audio API
 
 Implementation Timeline:
-<br>
-TBA
+<ol>
+    <li>Research Web Audio API, keyboard interactions, and audio interactions</li>
+    <li>Render pads with proper keyboard and audio interactions</li>
+    <li>Style the project to resemble the Akai MPC</li>
+    <li>Research and implement metronome functionality</li>
+</ol>
