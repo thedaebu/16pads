@@ -12,7 +12,8 @@
   "scripts": {
     "serve": "NODE_ENV=development webpack serve --config webpack.dev.js",
     "watch": "NODE_ENV=development webpack --watch --config webpack.dev.js",
-    "build": "NODE_ENV=production webpack --config webpack.prod.js"
+    "build": "NODE_ENV=production webpack --config webpack.prod.js",
+    "dev": "concurrently \"npm run serve\" \"npm run watch\""
   },
   "author": "",
   "license": "ISC",
@@ -36,5 +37,9 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.1",
+    "tone": "^14.7.77"
   }
 }

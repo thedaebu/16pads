@@ -1,0 +1,187 @@
+@font-face {font-family: "Programme Regular"; src: url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.eot"); src: url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.woff") format("woff"), url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.svg#Programme Regular") format("svg"); } 
+
+@font-face {font-family: "Pixelade"; src: url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.eot"); src: url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.woff") format("woff"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.svg#Pixelade") format("svg"); } 
+
+body {
+  background-color: rgb(43, 43, 43);
+}
+
+.controller {
+  background-color: rgb(17, 17, 17);
+  height: 580px;
+  width: 550px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+}
+
+.screen-main {
+  height: 110px;
+  width: 360px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(179, 179, 179);
+  border-radius: 5px;
+  position: relative;
+  top: 30px;
+  left: 33px;
+}
+
+.screen-main > p {
+  font-family: "Programme Regular";
+  position: relative;
+  bottom: 4px;
+  color: rgb(0, 217, 255);
+}
+
+.screen {
+  margin: auto;
+  background-color: blue;
+  height: 82px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+
+.screen > p {
+  font-family: 'Pixelade', sans-serif;
+  color: white;
+}
+
+.pads {
+    background-color: black;
+    height: 380px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    left: 23px;
+    top: 53px;
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.pads-inner {
+    background-color: black;
+    height: 360px;
+    width: 360px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;   
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.pad {
+  margin: auto;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  bottom: 5px;
+}
+
+.pad > p {
+  font-family: 'Programme Regular', sans-serif;
+  font-size: 10px;
+  color: rgb(212, 212, 212);
+  position: relative;
+  top: 5px;
+}
+
+.pad-button {
+  height: 65px;
+  width: 65px;
+  
+  border-radius: 5px;
+  background: linear-gradient(15deg, #505050, #272727 33%)
+  
+}
+
+.pad-button.pressed {
+  background: linear-gradient(15deg, #2e2e2e, #0f0f0f 33%);
+}
+
+#pad-1.unpressed, #pad-6.unpressed, #pad-11.unpressed, #pad-16.unpressed {
+  border: 2px solid magenta;
+
+}
+
+#pad-1.pressed, #pad-6.pressed, #pad-11.pressed, #pad-16.pressed {
+  border: 2px solid magenta;
+  box-shadow: 0px 0px 7px 7px magenta;
+}
+
+#pad-2.unpressed, #pad-7.unpressed, #pad-12.unpressed, #pad-13.unpressed {
+  border: 2px solid yellow;
+}
+
+#pad-2.pressed, #pad-7.pressed, #pad-12.pressed, #pad-13.pressed {
+  border: 2px solid yellow;
+  box-shadow: 0px 0px 7px 7px yellow;
+}
+
+#pad-3.unpressed, #pad-8.unpressed, #pad-9.unpressed, #pad-14.unpressed {
+  border: 2px solid cyan;
+}
+
+#pad-3.pressed, #pad-8.pressed, #pad-9.pressed, #pad-14.pressed {
+  border: 2px solid cyan;
+  box-shadow: 0px 0px 7px 7px cyan;
+}
+
+#pad-4.unpressed, #pad-5.unpressed, #pad-10.unpressed, #pad-15.unpressed {
+  border: 2px solid orange;
+}
+
+#pad-4.pressed, #pad-5.pressed, #pad-10.pressed, #pad-15.pressed {
+  border: 2px solid orange;
+  box-shadow: 0px 0px 7px 7px orange;
+  
+}
+
+.controller-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 65px;
+  margin-top: 50px;
+}
+
+.metronome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.metronome > p {
+  font-family: "Programme Regular";
+  font-weight: 100px;
+  font-size: 10px;
+  color: rgb(212, 212, 212);
+  border-radius: 5px;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 3px;
+}
+
+.metronome-toggle {
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(30deg, #505050, #272727 70%);
+  cursor: pointer;
+  border-radius:50%;
+}
+
+.metronome-toggle:hover {
+  border-radius:50%;
+  box-shadow: 0px 0px 7px 7px magenta;
+}
+
+.links {
+  color: white;
+}

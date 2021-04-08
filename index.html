@@ -4,13 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
         <link rel="stylesheet" href="./dist/main.css" />
         <title>16 Pads</title>
     </head>
 
     <body>
         <!-- <canvas id="game-canvas"></canvas> -->
-        <h1 id="DOM-demo">DOM Demo</h1>
+        <div class="controller">
+            <div class="controller-left">
+                <div class="screen-main">
+                    <div class="screen">
+                        <p>Use the keys or click on the pads to play the samples</p>
+                        <p>1, 2, 3, 4</p>
+                        <p>Q, W, E, R</p>
+                        <p>A, S, D, F</p>
+                        <p>Z, X, C, V</p>
+                    </div>
+                    <p>16 PADS</p>
+                </div>
+                <div class="pads">
+
+                </div>
+            </div>
+            <div class="controller-right">
+                <div class="metronome">
+                    <p >METRONOME</p>
+                    <img class="metronome-toggle" src="https://i0.wp.com/studioinstitute.org/wp-content/uploads/2020/07/play-button-overlay-png.png?fit=352%2C352&ssl=1">
+                    
+                    <!-- <input type="range" class="metronome-slider" id="rangeinput" min="60" max="140" step="1" value="70" oninput="rangeoutput.value = rangeinput.value">
+                    <output id="rangeoutput">
+    
+                    </output> -->
+                </div>
+                <div class="links">
+                    <p>links</p>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+
+        </div>
+
         <script src="./dist/main.js"></script>
     </body>
 </html>
