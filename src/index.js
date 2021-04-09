@@ -37,85 +37,49 @@ window.addEventListener("DOMContentLoaded", () => {
 
     createPads();
 
-    const metronomeToggle = document.querySelector(".metronome-toggle");
+    let metronomeToggle = document.querySelector(".metronome-toggle");
     let bpm = 0;
     
     metronomeToggle.addEventListener("click", () => {
-        // const synthA = new Tone.FMSynth().toDestination();
-        // const loopA = new Tone.Loop(time => {
-	    // metronome.triggerAttackRelease("D2", "8n", time);
-
-        // Tone.Transport.scheduleRepeat((time) => {
-	    // metronome.start(time).stop(time);
-        // }, "8n");
-       
-        const loop = new Tone.Loop(time => {
+ 
+        const loop1 = new Tone.Loop(time => {
             metronome.start();
         }, "4n").start(0);
 
-        // Tone.Transport.scheduleRepeat((time) => {
-	    // metronome.start(time);
-        // }, "4n");
-
         if (bpm === 0) {
-            bpm = 70;
-            Tone.Transport.bpm.value = bpm;
-            Tone.Transport.start();
-        } else if (bpm === 70) {
             bpm = 80;
             Tone.Transport.bpm.value = bpm;
             Tone.Transport.start();
+            metronomeToggle.classList.add('eighty');
         } else if (bpm === 80) {
             bpm = 90;
             Tone.Transport.bpm.value = bpm;
             Tone.Transport.start();
+            metronomeToggle.classList.remove('eighty');
+            metronomeToggle.classList.add('ninety');
         } else if (bpm === 90) {
             bpm = 100;
             Tone.Transport.bpm.value = bpm;
             Tone.Transport.start();
+            metronomeToggle.classList.remove('ninety');
+            metronomeToggle.classList.add('hundred');
         } else if (bpm === 100) {
             bpm = 110;
             Tone.Transport.bpm.value = bpm;
             Tone.Transport.start();
+            metronomeToggle.classList.remove('hundred');
+            metronomeToggle.classList.add('hundredten');
         } else if (bpm === 110) {
             bpm = 120;
             Tone.Transport.bpm.value = bpm;
             Tone.Transport.start();
+            metronomeToggle.classList.remove('hundredten');
+            metronomeToggle.classList.add('hundredtwenty');
         } else {
             bpm = 0;
             Tone.Transport.stop();
+            metronomeToggle.classList.remove('hundredtwenty');
         }
-
     })
-
-
-
-    // Tone.Transport.scheduleRepeat(runSequence, '16n')
-
-
     
-    // function createMetronome () {
-    //     let metronome = document.querySelector(".metronome");
-    //     let metronomeSlider = document.createElement("input");
-    //     metronomeSlider.type = "range";
-    //     metronomeSlider.classList.add(`metronome-slider`);
-    //     metronome.appendChild(metronomeSlider);
-    // }
-    
-    // createMetronome();
-
-    // const metronomeSlider = document.body.querySelector('.metronome-slider');
-    // metronomeSlider.addEventListener('change', (e) => {
-    //     e.preventDefault();
-    //     console.log(e.target.value)
-    // })
-
-//     .metronome-slider {
-//   margin-top: 100px;
-//    transform: rotate(270deg);
-//   -moz-transform: rotate(270deg); 
-//   width: 100px;
-// }
-
-
 })

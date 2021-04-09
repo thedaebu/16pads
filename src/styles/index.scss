@@ -3,16 +3,17 @@
 @font-face {font-family: "Pixelade"; src: url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.eot"); src: url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.woff") format("woff"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/af1d3bb10392d997b8ff1367e2d22611.svg#Pixelade") format("svg"); } 
 
 body {
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(0, 0, 0);
 }
 
 .controller {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(29, 29, 29);
   height: 580px;
   width: 550px;
   border-radius: 5px;
-  margin: auto;
+  margin: 20px auto 0px auto;
   display: flex;
+  border: 2px solid rgb(43, 43, 43);
 }
 
 .screen-main {
@@ -140,7 +141,6 @@ body {
 #pad-4.pressed, #pad-5.pressed, #pad-10.pressed, #pad-15.pressed {
   border: 2px solid orange;
   box-shadow: 0px 0px 7px 7px orange;
-  
 }
 
 .controller-right {
@@ -166,6 +166,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgb(212, 212, 212);
   padding: 3px;
+  background: linear-gradient(30deg, #505050, #272727 70%);
 }
 
 .metronome-toggle {
@@ -177,11 +178,47 @@ body {
   border-radius:50%;
 }
 
-.metronome-toggle:hover {
+.metronome-toggle.eighty {
   border-radius:50%;
   box-shadow: 0px 0px 7px 7px magenta;
 }
 
+.metronome-toggle.ninety {
+  border-radius:50%;
+  box-shadow: 0px 0px 7px 7px yellow;
+}
+
+.metronome-toggle.hundred {
+  border-radius:50%;
+  box-shadow: 0px 0px 7px 7px cyan;
+}
+
+.metronome-toggle.hundredten {
+  border-radius:50%;
+  box-shadow: 0px 0px 7px 7px orange;
+}
+
+.metronome-toggle.hundredtwenty {
+  border-radius:50%;
+  box-shadow: 0px 0px 7px 7px magenta;
+}
+
+.metronome-toggle:hover {
+    background: linear-gradient(30deg, #2c2c2c, #000000 70%);
+}
+
 .links {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  height: 200px;
+  justify-content: space-between;
+  background: rgb(29, 29, 29);
+}
+
+
+.links > a > img{
+  background: rgb(29, 29, 29);
+  height: 40px;
+  width: 40px;
 }
