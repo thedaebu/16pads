@@ -1,6 +1,4 @@
 ## 16 Pads
-
-### Background:
 <a href="https://thedaebu.github.io/16pads/">16 Pads</a>
 
 
