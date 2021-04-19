@@ -122,6 +122,4 @@ function mouseUpSound (e) {
     }
 }
 
-
-
 export {mouseDownSound, mouseUpSound};

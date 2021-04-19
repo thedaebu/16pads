@@ -5,8 +5,6 @@ import {keyDownSound, keyUpSound} from "./key_actions";
 import { mouseDownSound, mouseUpSound } from "./mouse_actions";
 import { metronome } from "./sounds";
 
-// document.querySelector("#DOM-demo").addEventListener("click", startDOM);
-
 window.addEventListener("DOMContentLoaded", () => {
     
     window.addEventListener("keydown", keyDownSound);
@@ -19,8 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
         let padsInner = document.createElement('div');
         padsInner.classList.add(`pads-inner`);
         pads.appendChild(padsInner);
-        for (let i = 0; i < 16; i++) {
-            
+        for (let i = 0; i < 16; i++) {       
             let pad = document.createElement('div');
             pad.classList.add(`pad`);
             let padLabel = document.createElement('p');
@@ -50,7 +47,6 @@ window.addEventListener("DOMContentLoaded", () => {
     
 
     bpmLeft.addEventListener("click", () => {
-
         if (bpm === 120) {
             bpm = 110;
         } else if (bpm === 110) {
@@ -98,26 +94,4 @@ window.addEventListener("DOMContentLoaded", () => {
             Tone.Transport.stop();
         }       
     })
-    
-
-    // const bpmInput = document.querySelector('#rangeinput');
-    // const bpmOutput = document.querySelector('#rangeoutput');
-    // console.log(bpmInput.value);
-    // console.log(bpmOutput.value);
-
-    // bpmInput.oninput = function () {
-    //     console.log(bpmInput.value)
-    // }
-
-    // bpmInput.addEventListener('change', function(){
-    //     console.log(this.value)
-    //     Tone.Transport.bpm.value = this.value;
-    // });
-
-    // function updateBPM(val) {
-    //     bpmInput.value = val;
-    //     bpmOutput.innerHTML = val;
-    //     Tone.Transport.bpm.value = val; 
-    // }
-    
 })
