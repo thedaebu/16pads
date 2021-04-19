@@ -6,8 +6,8 @@
 
 ### Functionality:
 <ul>
-    <li>When corresponding key is pressed, the sample will be played</li>
-    <li>BPM controls for metronome</li>
+    <li>When corresponding key is pressed or pad is clicked on, the sample will be played</li>
+    <li>BPM controls for metronome with play/pause functionality</li>
 </ul>
 
 ### Wireframe:
