@@ -5,9 +5,8 @@ const outputDir = "./dist";
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"), 
   output: {
-    path: path.join(__dirname, outputDir),
-    filename: "[name].js",
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "./dist"),
+    filename: 'main.js'
   },
   resolve: {
     extensions: [".js"], // if we were using React.js, we would include ".jsx"

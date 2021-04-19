@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 65px;
+  margin-left: 55px;
   margin-top: 50px;
 }
 
@@ -166,52 +166,59 @@ body {
   border-radius: 5px;
   border: 1px solid rgb(212, 212, 212);
   padding: 3px;
-  background: linear-gradient(30deg, #505050, #272727 70%);
 }
 
-.metronome-toggle {
+.bpm-main {
+  display: flex;
+  width: 95px;
   margin-top: 10px;
+  justify-content: space-between;
+}
+
+.bpm-show {
+  width: 30px;
+  font-family: "Programme Regular";
+  font-weight: 100px;
+  font-size: 16px;
+  color: rgb(212, 212, 212);
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.bpm-show > p {
+  position: relative;
+  top: 2px;
+}
+
+.metronome-playpause, .bpm-main > img {
   height: 20px;
   width: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(212, 212, 212);
   background: linear-gradient(30deg, #505050, #272727 70%);
   cursor: pointer;
-  border-radius:50%;
 }
 
-.metronome-toggle.eighty {
-  border-radius:50%;
-  box-shadow: 0px 0px 7px 7px magenta;
+.metronome-playpause {
+  margin-top: 10px;
 }
 
-.metronome-toggle.ninety {
-  border-radius:50%;
-  box-shadow: 0px 0px 7px 7px yellow;
-}
-
-.metronome-toggle.hundred {
-  border-radius:50%;
+.metronome-playpause:active, .bpm-main > img:active {
+  background: linear-gradient(30deg, #313131, #161616 70%);
   box-shadow: 0px 0px 7px 7px cyan;
 }
 
-.metronome-toggle.hundredten {
-  border-radius:50%;
-  box-shadow: 0px 0px 7px 7px orange;
+.metronome-playpause.pressed {
+  box-shadow: 0px 0px 7px 7px cyan;
 }
 
-.metronome-toggle.hundredtwenty {
-  border-radius:50%;
-  box-shadow: 0px 0px 7px 7px magenta;
-}
-
-.metronome-toggle:hover {
-    background: linear-gradient(30deg, #2c2c2c, #000000 70%);
-}
 
 .links {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
-  height: 200px;
+  margin-top: 100px;
+  height: 250px;
   justify-content: space-between;
   background: rgb(29, 29, 29);
 }

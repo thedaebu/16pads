@@ -6,15 +6,14 @@
 ### Functionality:
 <ul>
     <li>When corresponding key is pressed, the sample will be played</li>
-    <li>Metronome for rhythm</li>
-    <li>Slider for BPM</li>
+    <li>BPM controls for metronome</li>
 </ul>
 
 ### Wireframe:
 <img src="https://github.com/thedaebu/16pads/blob/main/wireframe.png"></img>
 
-### Technology:
-Node.js, Web Audio API
+### Technologies:
+Javascript, Tone.js, SCSS, HTML
 
 ### Implementation Timeline:
 <ol>
