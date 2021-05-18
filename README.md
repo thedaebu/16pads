@@ -77,3 +77,6 @@ metronomePlayPause.addEventListener("click", () => {
     }       
 })
 ```
+
+<a href="https://www.linkedin.com/in/edkim163/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://eddie-kim.com/" target="_blank" rel="noopener noreferrer">Personal Site</a>
