@@ -4,6 +4,8 @@
 
 16 Pads is based on the Akai MPC controller. The controller is made up of a 4x4 grid of pads which can be played when pressed.
 
+<img src="./gifs/reallysmart.gif" alt="" />
+
 ### Functionality:
 <ul>
     <li>When corresponding key is pressed or pad is clicked on, the sample will be played</li>
