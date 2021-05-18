@@ -4,7 +4,7 @@
 
 16 Pads is based on the Akai MPC controller. The controller is made up of a 4x4 grid of pads which can be played when pressed.
 
-<img src="./gifs/reallysmart.gif" alt="" />
+<img src="https://raw.githubusercontent.com/thedaebu/16pads/main/assets/gifs/16pads.gif" alt="" />
 
 ### Functionality:
 <ul>
