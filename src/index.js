@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("mousedown", mouseDownSound);
     window.addEventListener("mouseup", mouseUpSound);
 
-    function createPads () {
+    function createPads() {
         let pads = document.querySelector('.pads');
         let padsInner = document.createElement('div');
         padsInner.classList.add(`pads-inner`);
@@ -30,22 +30,17 @@ window.addEventListener("DOMContentLoaded", () => {
             pad.appendChild(padLabel);
             padsInner.appendChild(pad);
         }
-    }
+    };
 
     createPads();
 
-    let bpmLeft = document.querySelector(".bpm-left");
     let bpmShow = document.querySelector(".bpm-show"); 
-    let bpmRight = document.querySelector(".bpm-right");
-    let metronomePlayPause = document.querySelector(".metronome-playpause");
-    
     let bpm = 120;
-    let bpmNumber = document.createElement('p')
+    let bpmNumber = document.createElement('p');
     bpmNumber.innerHTML = `${bpm}`;
     bpmShow.appendChild(bpmNumber);
-    let playStatus = "off";
     
-
+    let bpmLeft = document.querySelector(".bpm-left");
     bpmLeft.addEventListener("click", () => {
         if (bpm === 120) {
             bpm = 110;
@@ -60,8 +55,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         bpmNumber.innerHTML = `${bpm}`;
         Tone.Transport.bpm.value = bpm;
-    })
+    });
 
+    let bpmRight = document.querySelector(".bpm-right");
     bpmRight.addEventListener("click", () => {
         if (bpm === 70) {
             bpm = 80;
@@ -76,14 +72,14 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         bpmNumber.innerHTML = `${bpm}`;
         Tone.Transport.bpm.value = bpm;
-    })
-    
+    });
 
+    let metronomePlayPause = document.querySelector(".metronome-playpause");
+    let playStatus = "off";
     metronomePlayPause.addEventListener("click", () => {
         const loop1 = new Tone.Loop(time => {
             metronome.start();
         }, "4n").start(0);
-
         if (playStatus === "off"){
             playStatus = "on";
             metronomePlayPause.classList.add("pressed");
@@ -93,5 +89,5 @@ window.addEventListener("DOMContentLoaded", () => {
             metronomePlayPause.classList.remove("pressed");
             Tone.Transport.stop();
         }       
-    })
-})
+    });
+});
